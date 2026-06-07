@@ -36,48 +36,65 @@ module.exports = {
     // Custom package grouping rules
     packageRules: [
         {
+            groupName: "Asp.Versioning",
+            matchPackageNames: ["/Asp.Versioning/"]
+        },
+        {
             groupName: "Aspire",
             matchPackageNames: ["/Aspire/"]
         },
         {
-            groupName: "ModularPipelines",
-            matchPackageNames: ["/ModularPipelines/"]
+            groupName: "dotnet-sdk",
+            matchManagers: ["dotnet-sdk"],
+            matchPackageNames: ["dotnet-sdk"]
+        },
+        {
+            groupName: "Graylog",
+            matchPackageNames: ["/graylog/"]
         },
         {
             groupName: "Microsoft.Extensions",
             matchPackageNames: ["/Microsoft.Extensions/"]
         },
         {
-            groupName: "OpenTelemetry",
-            matchPackageNames: ["/OpenTelemetry/"]
-        },
-        {
-            groupName: "WixSharp",
-            matchPackageNames: ["/WixSharp/"]
-        },
-        {
-            groupName: "Rebus",
-            matchPackageNames: ["/Rebus/"]
+            groupName: "ModularPipelines",
+            matchPackageNames: ["/ModularPipelines/"]
         },
         {
             groupName: "NetEscapades",
             matchPackageNames: ["/NetEscapades/"]
         },
         {
-            groupName: "Nice3point.Revit.Toolkit",
-            matchPackageNames: ["/Nice3point\\.Revit\\.Toolkit/"]
+            groupName: "Nice3point.BenchmarkDotNet.Revit",
+            matchPackageNames: ["/Nice3point\\.BenchmarkDotNet\\.Revit/"]
         },
         {
             groupName: "Nice3point.Revit.Extensions",
             matchPackageNames: ["/Nice3point\\.Revit\\.Extensions/"]
         },
         {
+            groupName: "Nice3point.Revit.Toolkit",
+            matchPackageNames: ["/Nice3point\\.Revit\\.Toolkit/"]
+        },
+        {
             groupName: "Nice3point.TUnit.Revit",
             matchPackageNames: ["/Nice3point\\.TUnit\\.Revit/"]
         },
         {
-            groupName: "Nice3point.BenchmarkDotNet.Revit",
-            matchPackageNames: ["/Nice3point\\.BenchmarkDotNet\\.Revit/"]
+            groupName: "OpenTelemetry",
+            matchPackageNames: ["/OpenTelemetry/"]
+        },
+        {
+            groupName: "Rebus",
+            matchPackageNames: ["/Rebus/"]
+        },
+        {
+            groupName: "System",
+            matchPackageNames: ["/^System\\./"]
+        },
+        {
+            groupName: "WixSharp",
+            matchPackageNames: ["/WixSharp/"]
         },
         {
             matchPackageNames: ["/Nice3point.*Revit/"],
