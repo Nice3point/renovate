@@ -37,24 +37,33 @@ module.exports = {
     packageRules: [
         {
             groupName: "Asp.Versioning",
+            groupSlug: "Asp-Versioning",
             matchPackageNames: ["/Asp.Versioning/"]
         },
         {
             groupName: "Aspire",
+            groupSlug: "Aspire",
             matchPackageNames: ["/Aspire/"]
         },
         {
             groupName: "dotnet-sdk",
+            groupSlug: "dotnet-sdk",
             matchManagers: ["dotnet-sdk"],
             matchPackageNames: ["dotnet-sdk"]
         },
         {
-            groupName: "Graylog",
-            matchPackageNames: ["/graylog/"]
+            groupName: "Microsoft.Extensions",
+            groupSlug: "Microsoft-Extensions",
+            matchPackageNames: ["/Microsoft.Extensions/"]
         },
         {
-            groupName: "Microsoft.Extensions",
-            matchPackageNames: ["/Microsoft.Extensions/"]
+            groupName: "System",
+            groupSlug: "system-packages",
+            matchPackageNames: ["/^System\\./"]
+        },
+        {
+            groupName: "Graylog",
+            matchPackageNames: ["/graylog/"]
         },
         {
             groupName: "ModularPipelines",
@@ -87,10 +96,6 @@ module.exports = {
         {
             groupName: "Rebus",
             matchPackageNames: ["/Rebus/"]
-        },
-        {
-            groupName: "System",
-            matchPackageNames: ["/^System\\./"]
         },
         {
             groupName: "WixSharp",
