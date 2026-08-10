@@ -49,7 +49,9 @@ module.exports = {
             groupName: "dotnet-sdk",
             groupSlug: "dotnet-sdk",
             matchManagers: ["dotnet-sdk"],
-            matchPackageNames: ["dotnet-sdk"]
+            matchPackageNames: ["dotnet-sdk"],
+            //1xx feature band. latestPatch policy
+            allowedVersions: "/^\\d+\\.\\d+\\.1\\d\\d$/" 
         },
         {
             groupName: "Microsoft.Extensions",
