@@ -44,8 +44,6 @@ module.exports = {
         {
             groupName: "dotnet-sdk",
             groupSlug: "dotnet-sdk",
-            matchManagers: ["nuget"],
-            matchDatasources: ["dotnet-version"],
             matchPackageNames: ["dotnet-sdk"],
             //1xx feature band. latestPatch policy
             allowedVersions: "/^\\d+\\.\\d+\\.1\\d\\d$/"
