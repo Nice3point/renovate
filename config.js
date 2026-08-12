@@ -54,6 +54,16 @@ module.exports = {
             matchPackageNames: ["/Microsoft.Extensions/"]
         },
         {
+            groupName: "Microsoft.EntityFrameworkCore",
+            groupSlug: "Microsoft-EntityFrameworkCore",
+            matchPackageNames: ["/Microsoft.EntityFrameworkCore/"]
+        },
+        {
+            groupName: "Microsoft.AspNetCore",
+            groupSlug: "Microsoft-AspNetCore",
+            matchPackageNames: ["/Microsoft.AspNetCore/"]
+        },
+        {
             groupName: "System",
             groupSlug: "system-packages",
             matchPackageNames: ["/^System\\./"]
