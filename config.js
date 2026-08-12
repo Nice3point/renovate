@@ -2,7 +2,6 @@
 // Reference: https://docs.renovatebot.com/self-hosted-configuration/
 
 module.exports = {
-    // Baseline preset.
     extends: [
         "group:monorepos",
         "group:recommended",
@@ -21,18 +20,15 @@ module.exports = {
         "lookup-foundation/LookupEngine.UI"
     ],
 
-    // Create an Issue with a dashboard for all updates
     dependencyDashboard: false,
-    // Disable creation of the onboarding PR (Configure Renovate) in new repositories
     onboarding: true,
     prHourlyLimit: 0,
     prConcurrentLimit: 0,
+    semanticCommits: "disabled",
 
     labels: ["maintenance ⚙️"],
+    ignorePresets: ["group:dotnetMonorepo"],
 
-    // Disable semantic commits (removes chore(deps): prefix)
-    semanticCommits: "disabled",
-    
     // Custom package grouping rules
     packageRules: [
         {
